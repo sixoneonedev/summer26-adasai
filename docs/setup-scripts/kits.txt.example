@@ -1,8 +1,0 @@
-# One kit per line: <kit_name> <ip_address>
-# Copy this file to kits.txt (in this same folder) and fill in your actual kit IPs.
-# Lines starting with # are ignored.
-kit1 192.168.1.101
-kit2 192.168.1.102
-kit3 192.168.1.103
-kit4 192.168.1.104
-kit5 192.168.1.105
