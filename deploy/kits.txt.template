@@ -1,0 +1,27 @@
+# kits.txt -- which kit Pis to deploy to
+#
+# THIS IS A TEMPLATE. Do not edit it in place and do not commit a filled-in
+# copy -- it is tracked. Instead, from inside deploy/:
+#
+#   cp kits.txt.template ./kits.txt
+#   chmod 600 ./kits.txt
+#   $EDITOR ./kits.txt
+#
+# REPLACE each <STUB> below with that kit's real IP address, e.g.
+#   kit1 <KIT1_IP>     ->     kit1 10.0.0.101
+#
+# Format:  <kit_name> <ip_address>   -- whitespace separated, one kit per line.
+#          Lines starting with # are ignored. Blank lines are ignored.
+#
+# Add or delete lines so the list matches how many kits you actually have.
+# Kit names are free-form but must be UNIQUE -- they label the per-kit
+# success/failure output, so duplicates make it impossible to tell kits apart.
+#
+# deploy_to_kits.sh and copy_file_to_kits.sh both refuse to run while any
+# <STUB> remains, so you cannot accidentally deploy against placeholders.
+
+kit1 <KIT1_IP>
+kit2 <KIT2_IP>
+kit3 <KIT3_IP>
+kit4 <KIT4_IP>
+kit5 <KIT5_IP>

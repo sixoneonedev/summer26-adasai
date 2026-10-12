@@ -1,0 +1,24 @@
+# kit-env.sh -- ssh credentials for the kit Pis
+#
+# THIS IS A TEMPLATE. Do not edit it in place and do not commit a filled-in
+# copy -- it is tracked. Instead, from inside deploy/:
+#
+#   cp kit-env.sh.template ./kit-env.sh
+#   chmod 600 ./kit-env.sh
+#   $EDITOR ./kit-env.sh
+#
+# REPLACE each <STUB> below with the real value, then before deploying:
+#
+#   source ./kit-env.sh
+#   ./deploy_to_kits.sh
+#
+# WHY THIS FILE EXISTS: these values used to be hardcoded in
+# deploy_to_kits.sh, which meant the ssh password was one `git add` away from
+# being published. Keeping them in deploy/kit-env.sh, which .gitignore
+# excludes, is what prevents that. Never move them back into a script.
+
+export PI_USER="<SSH_USERNAME_ON_THE_KITS>"
+export PI_PASS="<SSH_PASSWORD_ON_THE_KITS>"
+
+# PI_USER is needed by both scripts.
+# PI_PASS is needed only by deploy_to_kits.sh, which uses sshpass for rsync.

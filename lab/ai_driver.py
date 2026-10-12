@@ -4,7 +4,7 @@ import os
 
 # ═══════════════════════════════════════
 #   SET THIS TO INSTRUCTOR PROVIDED IP
-OLLAMA_HOST = os.environ.get('OLLAMA_HOST', '192.168.4.44')   # change to instructor provided IP which is 192.168.128.207
+OLLAMA_HOST = os.environ.get('OLLAMA_HOST', '192.168.4.44')   # set automatically by deploy/deploy_to_kits.sh, or export OLLAMA_HOST yourself
 OLLAMA_PORT = 11434
 MODEL       = "phi3:mini"
 # ═══════════════════════════════════════
